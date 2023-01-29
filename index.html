@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <title>Probability Game</title>
+    <link rel="icon" type="image/svg+xml" href="d.png" />
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,11 +17,9 @@
 <body>
     <main>
         <header>
-          <h1>🚀Probability Game 🎲</h1>   
+          <h1>🚀Dice & Spinner Probability Game 🎲</h1>   
     </header>
    
-    
-
     <div class="container">
         
         <div class="dice">
@@ -39,6 +36,15 @@
         <button class="roll">
             Roll Dice
         </button>
+        <audio id="roll-sound" src="shake-dice1.mp3"></audio>
+        <audio id="roll-sound2" src="bouncy.mp3"></audio>
+        <audio id="spin-sound" src="Wheel Spin.mp3"></audio>
+
+        <button class="reload">Play Again!</button>
+        <div class="by-mercy" data-period="2000" style="font-family:'Courier New', monospace" data-type='[ "Created by Merciful" ]'>
+            <span class="wrap"></span><span class="cursor">|</span>
+          </div>        
+
 
     </div>
 </main> 
