@@ -6,6 +6,7 @@ h1, h2, h3, blockquote {
     font-weight: 600;
     font-style: normal;
     color: #dddbd8;
+    font-size: 60px;
   
 }
 header {
@@ -55,6 +56,23 @@ body {
     margin: auto;
     margin-bottom: 150px;
 
+}
+
+.by-mercy {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #dddbd8;
+    font-family:'Courier New', monospace;
+}
+.cursor {
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 /*
@@ -187,11 +205,32 @@ body {
     font: 700 16px 'Montserrat';
     border: 2px solid #ff6b35;
     transition: .4s;
+    display: block;
 }
 
 .roll:hover {
     color: #fff;
     background: #ff6b35;
+}
+/*
+    Reload Button styles
+*/
+
+.reload {
+    cursor: pointer;
+    color: #35bcff;
+    margin-top: 60px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font: 700 16px 'Montserrat';
+    border: 2px solid #35bcff;
+    transition: .4s;
+    display: none;
+}
+
+.reload:hover {
+    color: #fff;
+    background: #35bcff;
 }
 
 /*SPINNNNNNNER*/
@@ -206,6 +245,8 @@ body {
     text-align: center;
     line-height: 150px;
     display: none;
+    margin-top: 0;
+    margin-bottom: -50px;
 }
 
 
